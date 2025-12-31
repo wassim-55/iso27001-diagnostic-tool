@@ -3,7 +3,7 @@
   publish = "build"
 
 [context.production]
-  environment = { NODE_ENV = "production", NPM_FLAGS = "--legacy-peer-deps" }
+  environment = { NODE_ENV = "production", NPM_FLAGS = "--legacy-peer-deps", NODE_VERSION = "20" }
 
 [context.deploy-preview]
   environment = { NODE_ENV = "production", NPM_FLAGS = "--legacy-peer-deps" }
