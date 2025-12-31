@@ -115,26 +115,26 @@ module.exports = require('./webpack.base.babel')({
       minRatio: 0.8,
     }),
 
-    new WebpackPwaManifest({
-      name: 'React Boilerplate',
-      short_name: 'React BP',
-      description: 'My React Boilerplate-based project!',
-      background_color: '#fafafa',
-      theme_color: '#b1624d',
-      inject: true,
-      ios: true,
-      icons: [
-        {
-          src: path.resolve('app/images/iso27001-logo.png'),
-          sizes: [72, 96, 128, 144, 192, 384, 512],
-        },
-        {
-          src: path.resolve('app/images/iso27001-logo.png'),
-          sizes: [120, 152, 167, 180],
-          ios: true,
-        },
-      ],
-    }),
+    // new WebpackPwaManifest({
+    //   name: 'React Boilerplate',
+    //   short_name: 'React BP',
+    //   description: 'My React Boilerplate-based project!',
+    //   background_color: '#fafafa',
+    //   theme_color: '#b1624d',
+    //   inject: true,
+    //   ios: true,
+    //   icons: [
+    //     {
+    //       src: path.resolve('app/images/iso27001-logo.png'),
+    //       sizes: [72, 96, 128, 144, 192, 384, 512],
+    //     },
+    //     {
+    //       src: path.resolve('app/images/iso27001-logo.png'),
+    //       sizes: [120, 152, 167, 180],
+    //       ios: true,
+    //     },
+    //   ],
+    // }),
 
     new HashedModuleIdsPlugin({
       hashFunction: 'sha256',
