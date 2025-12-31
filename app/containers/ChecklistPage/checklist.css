@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;    
+}
+
+.center-aligning {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.pd-10px {
+    padding: 10px;
+}
+
+.table-input {
+    min-height: 150px;
+    width: 200px;
+}

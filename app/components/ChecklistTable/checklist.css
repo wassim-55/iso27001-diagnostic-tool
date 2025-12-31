@@ -1,0 +1,174 @@
+/* ========== CHECKLIST TABLE STYLES ========== */
+
+.checklist-wrapper {
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.checklist-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* ========== STICKY HEADER ========== */
+.checklist-thead-sticky {
+    position: sticky;
+    top: 0px;
+    /* Stick to the top to prevent gap above */
+    z-index: 1000;
+    /* Max z-index to stay above everything */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checklist-header-row {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+}
+
+.checklist-th {
+    color: white !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1.25rem 1rem !important;
+    font-size: 0.875rem;
+    border: none !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* ========== MAIN SECTION ROWS ========== */
+.checklist-main-section-row {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+    color: white !important;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.checklist-main-section-row th {
+    padding: 1rem !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* ========== SUB SECTION ROWS ========== */
+.checklist-sub-section-row {
+    background: linear-gradient(135deg, #64748b 0%, #475569 100%) !important;
+    color: white !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.checklist-sub-section-row td,
+.checklist-sub-section-row th {
+    padding: 0.875rem !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* ========== TABLE BODY ========== */
+.checklist-table tbody tr {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.checklist-table tbody tr:hover {
+    background-color: #ffffff !important;
+    transform: scale(1.005);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.checklist-table tbody td {
+    padding: 0.875rem !important;
+    vertical-align: middle;
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.checklist-table tbody th {
+    padding: 0.875rem !important;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .checklist-thead-sticky {
+        top: 0px;
+    }
+
+    .checklist-th {
+        font-size: 0.75rem;
+        padding: 1rem 0.5rem !important;
+    }
+
+    .checklist-table tbody td,
+    .checklist-table tbody th {
+        padding: 0.75rem 0.5rem !important;
+        font-size: 0.85rem;
+    }
+}
+
+/* ========== ALTERNATING ROWS ========== */
+.checklist-table tbody tr:nth-child(even):not(.checklist-main-section-row):not(.checklist-sub-section-row) {
+    background-color: #ffffff;
+}
+
+.checklist-table tbody tr:nth-child(odd):not(.checklist-main-section-row):not(.checklist-sub-section-row) {
+    background-color: white;
+}
+
+/* ========== SCROLLBAR FOR TABLE ========== */
+.checklist-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.checklist-wrapper::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+.checklist-wrapper::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 5px;
+}
+
+.checklist-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* ========== COMPLIANCE SELECT ========== */
+.compliance-select {
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.compliance-select:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.compliance-select:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3) !important;
+}
+
+.compliance-select option {
+    background: white;
+    color: #1e293b;
+    padding: 8px;
+    font-weight: 600;
+}
+
+/* ========== STATUS BADGE ANIMATION ========== */
+.badge {
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}

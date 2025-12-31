@@ -1,0 +1,149 @@
+/* ========== DASHBOARD STYLES ========== */
+
+.dashboard-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chart-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #475569;
+    font-weight: 600;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+}
+
+.legend-color.high {
+    background: #10b981;
+}
+
+/* Green */
+.legend-color.med {
+    background: #f59e0b;
+}
+
+/* Yellow */
+.legend-color.low {
+    background: #ef4444;
+}
+
+/* Red */
+
+.chart-instruction {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Specific styling for the chart component wrapper */
+.bar-chart-wrapper text {
+    font-family: 'Outfit', sans-serif !important;
+    fill: #475569 !important;
+}
+
+.bar-chart-wrapper rect {
+    transition: all 0.3s ease;
+}
+
+.bar-chart-wrapper rect:hover {
+    fill-opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Chart scroll container */
+.wrapper.center-aligning>div[style*="overflowX"] {
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+}
+
+/* Custom scrollbar styling */
+.wrapper.center-aligning>div[style*="overflowX"]::-webkit-scrollbar {
+    height: 8px;
+}
+
+.wrapper.center-aligning>div[style*="overflowX"]::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.wrapper.center-aligning>div[style*="overflowX"]::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.wrapper.center-aligning>div[style*="overflowX"]::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

@@ -1,0 +1,5 @@
+export const CONFIG_HEADER_TITLE = 'Configuration du fichier d\'audit'
+export const LABEL_DOCUMENT_TITLE = 'Titre du document'
+export const LABEL_CLIENT_NAME = 'Nom du client'
+export const DESCRIPTION = 'Description'
+export const BUTTON_TEXT = 'ENREGISTRER LA CONFIGURATION'
