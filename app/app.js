@@ -16,16 +16,6 @@ import { ConnectedRouter } from 'connected-react-router';
 import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
 
-console.log('App.js is initializing...');
-
-window.onerror = function (message, source, lineno, colno, error) {
-  console.error('Global Error Caught:', message, source, lineno, colno, error);
-  const appDiv = document.getElementById('app');
-  if (appDiv) {
-    appDiv.innerHTML = '<div style="color: red; padding: 20px;"><h1>Something went wrong</h1><p>' + message + '</p></div>';
-  }
-};
-
 // Import root app
 import App from 'containers/App';
 
@@ -89,6 +79,6 @@ if (!window.Intl) {
 // Install ServiceWorker and AppCache in the end since
 // it's not most important operation and if main code fails,
 // we do not want it installed
-// if (process.env.NODE_ENV === 'production') {
-//   require('offline-plugin/runtime').install(); // eslint-disable-line global-require
-// }
+if (process.env.NODE_ENV === 'production') {
+  require('offline-plugin/runtime').install(); // eslint-disable-line global-require
+}
