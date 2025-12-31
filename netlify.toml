@@ -7,3 +7,8 @@
 
 [context.deploy-preview]
   environment = { NODE_ENV = "production", NPM_FLAGS = "--legacy-peer-deps" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
