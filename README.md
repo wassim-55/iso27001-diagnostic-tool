@@ -44,6 +44,10 @@ A professional web application designed to streamline the process of ISO 27001 a
    npm run build
    ```
 
+## 🚀 Deployment
+This project is deployed using **Netlify**.
+You can access the live version here: [https://iso27001-diagtool.netlify.app](https://iso27001-diagtool.netlify.app)
+
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
