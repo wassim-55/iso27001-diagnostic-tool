@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap'
 import ConfigComponent from '../../components/ConfigComponent/ConfigComponent';
-import { retrieveFileInLocalStorage, verifyFileCreated } from '../../providers/Storage/storage';
+// Unused imports removed
 import SaveFileComponent from '../../components/SaveFileComponent/SaveFileComponent';
 
 class Config extends Component {
@@ -21,11 +21,8 @@ class Config extends Component {
     }
 
     componentDidMount = () => {
-        verifyFileCreated(this.props.history).then(
-            this.setState({ verifiedLoad: true })
-        ).catch(error => {
-            this.setState({ verifiedLoad: false })
-        })
+        // No verification needed - we want to allow creating a file
+        this.setState({ verifiedLoad: true })
     }
 
     render = () => {
